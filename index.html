@@ -1,9 +1,32 @@
 <html>
   <head>
+    <style type="text/css">
+      #xd {
+        display: none;
+        width: 500px;
+      }
+
+      #lel > a {
+          color: snow;
+        }
+      }
+    </style>
+    <script type="text/javascript">
+      function dontTouchThat() {
+        var robbie = document.querySelector("#xd");
+        console.log("sup m8");
+
+        robbie.style.display == "none" ? robbie.style.display = "block" : robbie.style.display = "none";
+      }
+    </script>
   </head>
   <body>
     <h1>We are number one</h1>
     <img src="robbie.jpg" />
+    <h3 id="lel">
+      <a href="#" onclick="dontTouchThat()">Don't touch that</a>
+    </h3>
+    <img src="dont_touch_that.jpg" id="xd" />
   </body>
 </html>
 
